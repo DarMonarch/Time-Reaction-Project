@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reaction Time Game</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="game-container" id="game-container">
+    <h1>Reaction Time Challenge</h1>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <div class="player-input">
+      <label for="player">Your Name:</label>
+      <input type="text" id="player" placeholder="Enter your name"/>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="message" class="message">Enter your name and click Start</div>
+
+    <div class="stats">
+      <span id="hits">Hits: 0</span>
+      <span id="misses">Misses left: 5</span>
+    </div>
+
+    <div class="game-area">
+      <!-- ghost boxes injected here -->
+      <div id="box" class="box"></div>
+    </div>
+
+    <button id="restart-btn" class="restart-btn">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
